@@ -12,7 +12,7 @@ print "Where do you live %s?" % user_name #plugs in user_name again
 lives = raw_input(prompt) # set the command line inputs to to the variable lives
 
 print "What kind of computer do you have?"
-computer = raw_input(prompt)
+computer = raw_input(prompt) # sets the command line input to computer 
 
 print """
 Alright, so you said %r about liking me.
