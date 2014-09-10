@@ -15,19 +15,28 @@ current_file = open(input_file)
 
 print "First let's print the whole file: \n"
 
-print_all(current_file)
+# print_all(current_file)
 
 print "Now let's rewind, kind of like a tape."
 
+def print_current(f):
+	print f.readline()
+
+print "the test"
+
+print_current(current_file)
 rewind(current_file)
+print_current(current_file)
 
-print "Let's print three lines:"
+# print "the end of the test"
 
-current_line = 1
-print_a_line(current_line, current_file)
+# print "Let's print three lines:"
 
-current_line = current_line + 1
-print_a_line(current_line, current_file)
+# current_line = 1
+# print_a_line(current_line, current_file)
 
-current_line = current_line + 1
-print_a_line(current_line, current_file) 
+# current_line = current_line + 1
+# print_a_line(current_line, current_file)
+
+# current_line = current_line + 1
+# print_a_line(current_line, current_file) 
